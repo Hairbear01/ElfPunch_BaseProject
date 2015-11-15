@@ -4,7 +4,22 @@
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
         <Project Name="MainScene.csd" Type="Scene" />
-        <Image Name="HelloWorld.png" />
+        <Project Name="GameScene.csd" Type="Scene" />
+        <Project Name="LeaderBoard.csd" Type="Scene" />
+        <Folder Name="Sprites">
+          <Folder Name="Elfs">
+            <Image Name="ElfHit.png" />
+            <Image Name="ElfMissed.png" />
+            <Image Name="RarerElfUnTouched.png" />
+            <Image Name="RegularElfUnTouched.png" />
+          </Folder>
+          <Folder Name="Room">
+            <Image Name="GameBoardScreen.png" />
+            <Image Name="LeaderBoard.png" />
+            <Image Name="StartScreen.png" />
+          </Folder>
+        </Folder>
+        <Project Name="Elf.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

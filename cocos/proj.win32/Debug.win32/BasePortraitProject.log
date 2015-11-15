@@ -1,0 +1,25 @@
+﻿Build started 15/11/2015 21:27:42.
+     1>Project "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\BasePortraitProject.vcxproj" on node 2 (Build target(s)).
+     1>PreLinkEvent:
+         if not exist "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\" mkdir "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\"
+         xcopy /Y /Q "C:\Cocos\frameworks\cocos2d-x-3.8\prebuilt\win32\*.*" "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\"
+         
+         :VCEnd
+         60 File(s) copied
+       Link:
+         BasePortraitProject.vcxproj -> F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\BasePortraitProject.exe
+       CustomBuildStep:
+         if not exist "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\" mkdir "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\"
+         xcopy "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\..\Resources" "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\" /D /E /I /F /Y
+               
+         :VCEnd
+         F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\Resources\res\Elf.csb -> F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\res\Elf.csb
+         F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\Resources\res\GameScene.csb -> F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\res\GameScene.csb
+         F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\Resources\res\LeaderBoard.csb -> F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\res\LeaderBoard.csb
+         F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\Resources\res\MainScene.csb -> F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\Debug.win32\res\MainScene.csb
+         4 File(s) copied
+     1>Done Building Project "F:\Education\3_University\Year_2\Semester_1-2\Technical Games Production\Prototype\BaseProject\ElfPunch_BaseProject\cocos\proj.win32\BasePortraitProject.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.72
