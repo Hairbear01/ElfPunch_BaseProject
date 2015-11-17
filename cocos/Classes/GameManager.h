@@ -8,7 +8,7 @@ class GameManager
 {
 private:
 	int _score;
-	int _numOfElfs;
+	int _numOfElfs; // number of times the elfs will poke up
 	float _speed;
 public:
 	GameManager();
@@ -19,8 +19,10 @@ public:
 	void ResetScore();
 
 	void SetNumOfElfs(int numOfElfs);
+	int GetNumOfElfs();
 
 	void SetSpeed(float newSpeed);
+	int GetSpeed();
 };
 
 #endif // __GAMEMANAGER_H__
