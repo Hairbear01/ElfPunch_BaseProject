@@ -8,11 +8,13 @@
 
 using namespace std;
 
+#define ELF_NUMBER 11
+
 class Game
 {
 private:
 	GameManager* _gameManager;
-	Elf* _elfs[11]; // one for each hole in the game board
+	Elf* _elfs[ELF_NUMBER]; // one for each hole in the game board
 	int _numOfElfs; // number of times the elfs will poke up
 	float _speed;
 	bool _running;
