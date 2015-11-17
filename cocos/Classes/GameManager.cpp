@@ -14,6 +14,9 @@ GameManager::~GameManager()
 {
 }
 
+
+// Scoring
+//======================================================================
 int GameManager::GetScore()
 {
 	return _score;
@@ -29,12 +32,28 @@ void GameManager::ResetScore()
 	_score = 0;
 }
 
+
+// Elves
+//======================================================================
 void GameManager::SetNumOfElfs(int numOfElfs)
 {
 	_numOfElfs = numOfElfs;
 }
 
+int GameManager::GetNumOfElfs()
+{
+	return _numOfElfs;
+}
+
+
+// Speed
+//======================================================================
 void GameManager::SetSpeed(float newSpeed)
 {
 	_speed = newSpeed;
+}
+
+float GameManager::GetSpeed()
+{
+	return _speed();
 }

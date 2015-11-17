@@ -14,15 +14,21 @@ public:
 	GameManager();
 	~GameManager();
 
+	// Scoring
+	//======================================================================
 	int GetScore();
 	void AddToScore(int increment);
 	void ResetScore();
 
+	// Elves
+	//======================================================================
 	void SetNumOfElfs(int numOfElfs);
 	int GetNumOfElfs();
 
+	// Speed
+	//======================================================================
 	void SetSpeed(float newSpeed);
-	int GetSpeed();
+	float GetSpeed();
 };
 
 #endif // __GAMEMANAGER_H__

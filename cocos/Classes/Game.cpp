@@ -4,7 +4,6 @@
 Game::Game()
 {
 	_running = false;
-	_paused = false;
 	StartGame();
 }
 
