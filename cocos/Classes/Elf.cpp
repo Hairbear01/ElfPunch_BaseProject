@@ -8,7 +8,7 @@ Elf::Elf()
 	_timeLeftUp = 0.0f;
 }
 
-bool Elf::ElfInit()
+Elf* Elf::ElfInit()
 {
 	// Set up the sprites and get the positions
 }

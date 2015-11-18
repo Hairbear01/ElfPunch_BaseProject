@@ -1,6 +1,5 @@
 #include "HelloWorldScene.h"
-#include "cocostudio/CocoStudio.h"
-#include "ui/CocosGUI.h"
+#include "Game.h"
 
 USING_NS_CC;
 
@@ -32,8 +31,35 @@ bool HelloWorld::init()
     }
     
     auto rootNode = CSLoader::createNode("MainScene.csb");
-
     addChild(rootNode);
 
+	_begin = (ui::Button*)rootNode->getChildByName("BEGIN");
+	_settings = (ui::Button*)rootNode->getChildByName("SETTINGS");
+	_credits = (ui::Button*)rootNode->getChildByName("CREDITS");
+	_exit = (ui::Button*)rootNode->getChildByName("EXIT");
+
+	_begin->addTouchEventListener(CC_CALLBACK_2(HelloWorld::BeginButtonPressed, this));
+	_settings->addTouchEventListener(CC_CALLBACK_2(HelloWorld::SettingsButtonPressed, this));
+	_credits->addTouchEventListener(CC_CALLBACK_2(HelloWorld::CreditsButtonPressed, this));
+	_exit->addTouchEventListener(CC_CALLBACK_2(HelloWorld::ExitButtonPressed, this));
+
     return true;
+}
+
+void HelloWorld::BeginButtonPressed(Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+{
+	Game* nextScene = new Game(_gameManager);
+	CCDirector::getInstance()->replaceScene(nextScene->GetScene());
+}
+
+void HelloWorld::SettingsButtonPressed(Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+{
+}
+
+void HelloWorld::CreditsButtonPressed(Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+{
+}
+
+void HelloWorld::ExitButtonPressed(Ref* sender, cocos2d::ui::Widget::TouchEventType type)
+{
 }

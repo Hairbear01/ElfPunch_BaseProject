@@ -2,9 +2,19 @@
 #define __HELLOWORLD_SCENE_H__
 
 #include "cocos2d.h"
+#include "cocostudio/CocoStudio.h"
+#include "ui/CocosGUI.h"
+#include "GameManager.h"
+#include "Game.h"
 
 class HelloWorld : public cocos2d::Layer
 {
+private:
+	GameManager* _gameManager;
+	cocos2d::ui::Button* _begin;
+	cocos2d::ui::Button* _settings;
+	cocos2d::ui::Button* _credits;
+	cocos2d::ui::Button* _exit;
 public:
     // there's no 'id' in cpp, so we recommend returning the class instance pointer
     static cocos2d::Scene* createScene();
@@ -14,6 +24,11 @@ public:
 
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
+
+	void BeginButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+	void SettingsButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+	void CreditsButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
+	void ExitButtonPressed(Ref *sender, cocos2d::ui::Widget::TouchEventType type);
 };
 
 #endif // __HELLOWORLD_SCENE_H__

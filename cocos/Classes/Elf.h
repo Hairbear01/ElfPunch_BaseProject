@@ -25,7 +25,7 @@ public:
 	// Methods
 	Elf();
 	~Elf();
-	bool ElfInit();
+	Elf* ElfInit();
 
 	void ElfUpdate(float deltaTime);
 

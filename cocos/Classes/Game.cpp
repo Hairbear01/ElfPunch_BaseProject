@@ -1,15 +1,35 @@
 #include "Game.h"
 
 
-Game::Game()
+Game::Game(GameManager* previousGame)
 {
+	//Switch the scenes
+	_scene = cocos2d::Scene::create();
+	_rootNode = cocos2d::CSLoader::createNode("SecondScreen.csb");
+	_scene->addChild(_rootNode);
+
+	//Extract information from the GameManager
+	_gameManager = previousGame;
+	_numOfElfs = _gameManager->GetNumOfElfs();
+	_speed = _gameManager->GetSpeed();
+	_gameManager->ResetScore();
+
+	//Start the game
 	_running = false;
 	StartGame();
 }
 
-
 Game::~Game()
 {
+}
+
+void Game::Init()
+{
+}
+
+cocos2d::Scene* Game::GetScene()
+{
+	return _scene;
 }
 
 void Game::StartGame()
